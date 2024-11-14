@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NG WIZARD</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* Light background */
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #004d99;
+            padding: 40px 20px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        h2, h3 {
+            font-size: 22px;
+            color: #004d99;
+            margin: 20px 0 10px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Styling the iframe */
+        iframe {
+            display: block;
+            margin: 30px auto;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Info box styling */
+        .info-box {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            color: #555;
+        }
+
+        .info-box .info-title {
+            font-weight: bold;
+            color: #004d99;
+        }
+
+        .info-box a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .info-box a:hover {
+            text-decoration: underline;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+        }
+
+        /* Controls section */
+        .controls {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 30px auto;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .controls h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .key {
+            color: #004d99;
+            font-weight: bold;
+        }
+
+        /* Contributor section */
+        .contributor {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 30px auto;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contributor h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .contributor .name {
+            font-weight: bold;
+            color: #004d99;
+        }
+
+        /* Adding some responsive design */
+        @media (max-width: 768px) {
+            iframe {
+                width: 100%;
+                height: 500px;
+            }
+
+            .controls {
+                width: 90%;
+            }
+
+            .info-box, .contributor {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>NG WIZARD</h1>
+
+    <!-- Embed the game iframe -->
+    <iframe src="http://localhost:50587/" width="1500" height="800"></iframe>
+
+    <h2>Introduction</h2>
+    <h3>
+        With visibility low and tension high, the slightest sound—a crunch of snow, a whisper of wind—could reveal a position or be a clever ploy. The map holds more than just snow and ice; hidden pathways, abandoned ruins, and mysterious relics add an ominous undertone, hinting at an ancient story lost to time. In this game of mystery and survival, one question looms: Who will remain, and who will vanish like a shadow in the snow?
+    </h3>
+    
+    <h2>Controls</h2>
+    <div class="controls">
+        <h3>Player 1: <span class="key">W A S D</span> to move and <span class="key">Space</span> to shoot</h3>
+        <h3>Player 2: <span class="key">Arrow keys</span> to move and <span class="key">Enter</span> to shoot</h3>
+    </div>
+
+    <h2>Contributor</h2>
+    <div class="contributor">
+        <h3>Yoswat Amornvitkijvecha (67070503494)</h3>
+        <h3>Punnapob Wirojwongchai (67070503425)</h3>
+    </div>
+
+    <!-- Information box -->
+    <div class="info-box">
+        <div class="info-item">
+            <span class="info-title">Updated:</span> 1 day ago
+        </div>
+        <div class="info-item">
+            <span class="info-title">Published:</span> 3 days ago
+        </div>
+        <div class="info-item">
+            <span class="info-title">Status:</span> Released
+        </div>
+        <div class="info-item">
+            <span class="info-title">Platforms:</span> <a href="#">Unity WebGL</a>
+        </div>
+        <div class="info-item">
+            <span class="info-title">Author:</span> <a href="#">YourName</a>
+        </div>
+        <div class="info-item">
+            <span class="info-title">Genre:</span> <a href="#">Shooting</a>
+        </div>
+    </div>
+
+</body>
+</html>
